@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {HashRouter as BrowserRouter, Route, Routes } from 'react-router-dom'
+import Header from './components/NavBar/NavBar'
+import HomeView from './components/HomeView/HomeView'
+import WspButton from './components/WspButton/WspButton'
+import Footer from './components/Footer/Footer'
+import { CartProvider } from './context/CartContext'
+import Cart from './components/Cart/Cart'
+import ProductInfoView from './components/ProductInfo/ProudctInfoView'
+import ProductsContainer from './components/ProductsContainer/ProductsContainer'
+import FinishPurchase from './components/FinishPurchase/FinishPurchase'
+import Admin from './components/Admin/Admin'
+import  {GraciasXtuCompra}  from './components/GraciasXtuCompra/GraciasXtuCompra'
+import  CodigoDescuento  from './components/CodigoDescuento/CodigoDescuento'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='App'>
+    <BrowserRouter>
+      <CartProvider>
+      <Header/> 
+      <div className="contain">
+        <Routes>
+          <Route path="/" element={<HomeView/>}/>
+          <Route path="/marca/:marcaId" element={<ProductsContainer/>}/>
+          <Route path="/marca/:marcaId/categoria/:categoriaId" element={<ProductsContainer/>}/>
+          <Route path="/categoria/:categoriaId" element={<ProductsContainer/>}/>
+            <Route path="/producto/:productId" element={<ProductInfoView/>}/>
+          <Route path="/carrito" element={<Cart/>}/>
+          <Route path="/productos" element={<ProductsContainer/>}/>
+          <Route path="/codigodescuento" element={<CodigoDescuento/>}/>
+          <Route path="/terminarcompra" element={<FinishPurchase/>}/>
+          <Route path="/admin123" element={<Admin/>}/>
+          <Route path='/gracias' element={<GraciasXtuCompra/>}/>
+        </Routes>  
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <WspButton/>
+      <Footer/>
+      </CartProvider>
+    </BrowserRouter>
+    </div>
   )
 }
 

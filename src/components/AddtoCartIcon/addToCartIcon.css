@@ -1,0 +1,26 @@
+.addtoCart{
+    width: auto;
+    height: 30px;
+    white-space: nowrap;
+    background-color: #656565; 
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: azure;
+    
+    }
+.addtoCart:hover{ 
+    background-color: #232323;
+    scale: 1.1;
+    transition: 0.3s; 
+   }
+@media (max-width: 700px ){
+    .addtoCart{
+        font-size: 1em;
+        height: auto;
+        width: 100px;
+        }
+
+   }

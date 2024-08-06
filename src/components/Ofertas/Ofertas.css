@@ -1,0 +1,22 @@
+.sliderContainer{
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sliderContainer h2{
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.slides{
+    margin: auto;
+    width: 88%;
+    padding-top: 2em;
+    background-color: #111;
+}
+.slick-next {
+    height: 3em;
+}
