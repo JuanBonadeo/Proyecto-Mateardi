@@ -32,7 +32,7 @@ export default function ProductInfo({ id, nombre, precio, img1, img2, img3, desc
   const { addItem, quantity, formatearMoneda, calcularDescuento } = useCart();
   const handleOnAdd = (quantity) => {
     const productToAdd = {
-      id, nombre, precio, quantity, img1, descuento, 
+      id, nombre, precio, quantity, img1, descuento,
     }
     addItem(productToAdd)
   }
@@ -46,34 +46,41 @@ export default function ProductInfo({ id, nombre, precio, img1, img2, img3, desc
           transition={{ duration: .7, ease: "easeInOut", type: "spring", delay: .6 }}
           className="information">
           <h2>{nombre}</h2>
-          <p>{descripcion}</p>
-
           {descuento !== 0 && (
             <div className="priceAddto">
               <h5>
-                Precio: <span className="price">{formatearMoneda(precio)}</span>
                 <span className="discountedPrice">{nuevoPrecio}</span>
+                &nbsp;
+                <span className="price">{formatearMoneda(precio)}</span>
+
               </h5>
-              <AddToCartIcon onAdd={handleOnAdd} />
             </div>
           )}
           {descuento === 0 && (
             <div className="priceAddto">
               <h5>Precio: {formatearMoneda(precio)}</h5>
-              <AddToCartIcon onAdd={handleOnAdd} />
+
             </div>
           )}
+          <p>{descripcion}</p>
 
+
+          <AddToCartIcon onAdd={handleOnAdd}  />
           <h5>Categoria: {categoria.charAt(0).toUpperCase() + categoria.slice(1)}</h5>
           <div className="infoPayment">
             <h5>Metodos de Pago:</h5>
             <div className="paymentMethods">
-              <div className="paymentItem"><CreditCardIcon /><span>Debito</span></div>
+              <div className="paymentItem"><CreditCardIcon /><span>Debito/Credito</span></div>
               <div className="paymentItem"><AccountBalanceIcon /><span>Transf. Bancaria</span></div>
               <div className="paymentItem"><LocalAtmIcon /><span>Efectivo</span></div>
             </div>
           </div>
           <div className="envios"><h5>Envios a Todo el Pais </h5><LocalShippingIcon /></div>
+          <span>(envíos con correo argentino y vía cargo) </span>
+
+
+
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -97,6 +104,7 @@ export default function ProductInfo({ id, nombre, precio, img1, img2, img3, desc
             )}
           </Carousel>
         </motion.div>
+
       </div>
 
     </>

@@ -3,14 +3,6 @@ import { collection, getDocs, where, query } from 'firebase/firestore'
 import ProductCard from "../ProductCard/ProductCard";
 import { db } from '../../services/firebase/firebaseConfig'
 import './Ofertas.css'
-// const product = {
-//     nombre: 'sapeee',
-//     precio: 54000,
-//     stock: true,
-//     descuento: 45,
-//     img1: 'https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/products%2Fmates%2Fmate%201%2Fmini-imperial.jpeg?alt=media&token=804f660c-a119-4e51-a009-c537beb2f4fe',
-
-// }
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -76,7 +68,7 @@ export const Ofertas = () => {
 
     return (
         <div className="sliderContainer">
-            <h2>Ofertas</h2>
+            <h2>Nuestras Ofertas</h2>
             { loading 
             ? <Loader/>
             : 

@@ -1,6 +1,6 @@
 .productInfoContainer{
     height: 100vh;
-    width: 80%;
+    width: 70%;
     margin: 1em  auto;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     gap: 2em;
     color: #ffffff;
     margin-top: 2em;
-    border-bottom: 1px solid #656565
+    border-bottom: 1px solid rgb(0, 106, 255)
     ;
     padding: 2em 0;
 }
@@ -28,31 +28,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5em;
 }
 .productInfoContainer .information p{
     font-size: .9em
 }
-.priceAddto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-.priceAddto button{
-    margin-bottom: .5em;
-}
+
 .envios{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: .5em;
 }
 .infoPayment{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: .5em;
 }
 .infoPayment .paymentMethods{
     display: flex;
@@ -79,10 +71,12 @@
 }
 .price{
     text-decoration: line-through;
+    font-size: 1em;
 }
 .discountedPrice{
-    color: #656565;
+    color: rgb(0, 106, 255);
     font-weight: 700;
+    font-size: 1.5em;
 }
 .prices{
     display: inline;
@@ -90,14 +84,16 @@
 }
 .discountBadge{
     position: absolute;
-    background-color: #656565;
+    background-color: rgb(0, 106, 255);
     color: #fff;
     padding: .3em;
     font-size: 1.1em;
     font-weight: 700;
     z-index: 22;
 }
-
+.productInfoContainer button{
+    margin-bottom: .5em;
+}
 
 
 

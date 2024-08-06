@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 80%;
     margin: 2em auto;
-    gap: 2em;
+    gap: 3em;
     color: #ffffff;
 }
 .info{
@@ -14,8 +14,8 @@
     width: 50%;
 }
 .CombosContainer img{
-    width: 45%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 .CombosContainer h2{
     font-size: 2em;
