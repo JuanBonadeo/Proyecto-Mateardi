@@ -1,9 +1,11 @@
 .sliderContainer{
     margin: 3em auto;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .sliderContainer h2{
     font-size: 2em;
@@ -17,6 +19,14 @@
     padding-top: 2em;
     background-color: #111;
 }
-.slick-next {
-    height: 3em;
+
+
+
+@media screen and (max-width: 568px) {
+    .slides{
+
+        width: 85%;
+        padding-top: 2em;
+        
+    }
 }

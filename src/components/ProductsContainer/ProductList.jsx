@@ -1,17 +1,18 @@
-import ProductCard from "../ProductCard/ProductCard";
-import UpButton from "../UpButton/UpButton";
+import {ProductCard} from "../";
+import {UpButton} from "../../ui/";
 import './productsContainer.css'
 import { motion } from "framer-motion";
 import React from 'react'
 
 
-export default function ProductList({ products, orderBy}) {
+export const ProductList = ({ products, orderBy}) => {
 let filteredProducts = [...products];   
 if (orderBy === "precioAsc") {
     filteredProducts.sort((a, b) => (a.precio > b.precio) ? 1 : -1);
 } else if (orderBy === "precioDesc") {
     filteredProducts.sort((a, b) => (a.precio < b.precio) ? 1 : -1);
-} 
+} else 
+  filteredProducts
   return (
     <>
     <div className='productsContainer'>

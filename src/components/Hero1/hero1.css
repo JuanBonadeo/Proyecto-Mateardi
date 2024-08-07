@@ -14,11 +14,7 @@
     margin: 0 auto;
     width: 100%;
 }
-.hero3{
-    position: absolute;
-    top: 400px;
-    margin-left: 40%;
-}
+
 .hero12{
     position: absolute;
     top: 80%;
@@ -62,7 +58,7 @@
     
 }@media screen and (max-width: 400px) {
     .hero12{
-        top: 100px;
+        top: 125px;
     }
     
     

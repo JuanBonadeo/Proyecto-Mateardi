@@ -2,7 +2,7 @@ import { useState } from 'react'
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import './addToCartIcon.css'
 
- const AddToCartIcon = ({ initial = 1, onAdd},props) => {
+export const AddToCartIcon = ({ initial = 1, onAdd},props) => {
         const [quantity, setQuantity] = useState(initial)
     
  
@@ -12,4 +12,3 @@ import './addToCartIcon.css'
         </button>
     )
 }
-export default AddToCartIcon

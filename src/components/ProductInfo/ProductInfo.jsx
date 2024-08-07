@@ -2,20 +2,19 @@ import React from 'react'
 import { useEffect, useState, useContext } from 'react'
 import './productInfo.css'
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import Button from '../Button/Button';
 import Carousel from 'react-bootstrap/esm/Carousel'
+import { motion } from 'framer-motion';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import { CartContext } from '../../context/CartContext';
-import { motion } from 'framer-motion';
-import AddToCartIcon from '../AddtoCartBtn/AddToCartBtn';
+import { AddToCartIcon } from '../AddtoCartIcon/AddToCartIcon';
+import {Button} from '../../ui/';
 
 
 
 
-export default function ProductInfo({ id, nombre, precio, img1, img2, img3, descripcion, descuento = 0, categoria }) {
-
+export const ProductInfo = ({ id, nombre, precio, img1, img2, img3, descripcion, descuento = 0, categoria }) => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -65,7 +64,7 @@ export default function ProductInfo({ id, nombre, precio, img1, img2, img3, desc
           <p>{descripcion}</p>
 
 
-          <AddToCartIcon onAdd={handleOnAdd}  />
+          <AddToCartIcon onAdd={handleOnAdd} />
           <h5>Categoria: {categoria.charAt(0).toUpperCase() + categoria.slice(1)}</h5>
           <div className="infoPayment">
             <h5>Metodos de Pago:</h5>

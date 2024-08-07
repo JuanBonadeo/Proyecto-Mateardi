@@ -46,25 +46,28 @@
     
 }
 @media screen and (max-width: 480px){
-    .CombosContainer{
+    .hero2Mobile{
         flex-direction: column;
         display: flex;
         align-items: center;
-        gap: 1em;
+        justify-content: center;
         width: 100%;
-    }.CombosContainer img{
-        width: 80%;
+    }.hero2Mobile img{
+        width: 60%;
+        margin-bottom: 2em;
+
     }
-    .CombosContainer h2{
-        font-size: 1.2em;
-    }.CombosContainer p{
+    .hero2Mobile h2{
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+    }.hero2Mobile p{
         font-size: .8em;
-    }
-    .info{
-        width: 90%;
-        text-align: left;
-    }.info h2{
         text-align: center;
     }
     
+    
 }
+
+
+/* mobile */

@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
-const CartIcon = (prop) => {
+export const CartIcon = (prop) => {
     const useCart = () => {
         return useContext(CartContext)
     }
@@ -21,4 +21,3 @@ const CartIcon = (prop) => {
         </> 
     )
 }
-export default CartIcon

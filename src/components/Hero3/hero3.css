@@ -3,3 +3,22 @@
     height: 40%;
 }
 
+.mobileView{
+    display: none;
+}
+
+
+@media screen and (max-width: 568px) {
+    .mobileView{
+        display: block;
+    }
+    .desktopView{
+        display: none;
+    }
+    .hero3Mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

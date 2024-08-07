@@ -76,11 +76,11 @@
 
 @media screen and (max-width: 768px) {
     .productCardContainer{
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
     }
     .imgProduct{
-        min-height: 100%;
+        min-height: 80%;
     }
     .namePrice{
         margin-top: .3em;
