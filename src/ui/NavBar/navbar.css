@@ -14,7 +14,7 @@
 }
 
 .isActive {
-    color: rgb(0, 106, 255);
+    color: #222;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
@@ -27,7 +27,7 @@
     scale: 1.1;
     transition: .3s;
     border: none;
-    color: rgb(0, 106, 255);
+    color: #222;
 }.sape{
     border: none;
 

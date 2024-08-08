@@ -14,6 +14,7 @@
     object-position: center;
     min-height: 300px;
     cursor: pointer;
+    filter: brightness(.93)
 }
 
 .img{
@@ -43,7 +44,7 @@
     margin-bottom: .3em;
 }
 .discountedPrice{
-    color: rgb(0, 106, 255);
+    color: #222;
     margin-left: .6em;
     font-weight: 700;
 }
@@ -53,7 +54,7 @@
 }
 .discountBadge{
     position: absolute;
-    background-color: rgb(0, 106, 255);
+    background-color: #222;
     color: #222;
     padding: .3em;
     font-size: 1.1em;

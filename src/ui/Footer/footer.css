@@ -12,8 +12,8 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid 1.5px rgb(0, 106, 255);
-    border-top: solid 1.5px rgb(0, 106, 255);
+    border-bottom: solid 1.5px #222;
+    border-top: solid 1.5px #222;
     
 }.footer1 div {
     display: flex;
@@ -26,7 +26,7 @@ footer{
     cursor: pointer;
     user-select: none;
 }.footer1 div a:hover{
-    color: rgb(0, 106, 255);
+    color: #222;
     scale: 1.05;
     transition: .3s;
 }
@@ -53,7 +53,7 @@ footer h5{
 }.footer2 svg:hover{
     scale: 1.1;
     transition: .3s;
-    color: rgb(0, 106, 255);
+    color: #222;
 }
 .light{
     height: 100px;
@@ -65,7 +65,7 @@ footer h5{
 @media (max-width: 1200px ){
     .footer1{
         height: 17em;
-        border-top: solid 1.5px rgb(0, 106, 255);
+        border-top: solid 1.5px #222;
         padding-bottom: 1em;
 
         
