@@ -1,6 +1,7 @@
 export * from './AddtoCartBtn/AddToCartBtn'
 export * from './AddtoCartIcon/AddToCartIcon'
 export * from './CartIcon/CartIcon'
+export * from './Categorias/Categorias'
 export * from './Hero1/Hero1'
 export * from './Hero2/Hero2'
 export * from './Hero3/Hero3'

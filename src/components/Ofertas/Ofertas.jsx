@@ -30,8 +30,7 @@ var settings = {
     appendDots: dots => (
         <div
             style={{
-                backgroundColor: "#111",
-                padding: "10px",
+                marginBottom: "30px",
                 color: "white"
             }}
         >

@@ -9,7 +9,7 @@ export const Hero1 = () => {
       <Carousel.Item className='Hero1Container'>
         <img
           className="imgHero1"
-          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/slider2.png?alt=media&token=d9a4f256-9402-403f-be3f-eea132152956'
+          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/Todos%20los%20productos.png?alt=media&token=8dca98d6-11f0-4dab-b919-8bb5496e32e9'
           alt="First-slide"
         />
         <Carousel.Caption className='HeroCaption hero12'>

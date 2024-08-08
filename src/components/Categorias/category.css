@@ -1,0 +1,41 @@
+.categoriasContiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100%;
+    margin: 4em 0;
+}
+.category:hover{
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+.category{
+    cursor: pointer;
+}
+
+.categoryImg{
+    height: 12em;
+    width: 12em;
+    filter: brightness(0.9);
+}
+
+@media screen and (max-width: 768px){
+    .categoriasContiner{
+        flex-direction: column;
+    }
+    .categoryImg{
+        height: 20em;
+        width: 20em;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .categoryImg{
+        height: 15em;
+        width: 15em;
+    }
+    
+}
+

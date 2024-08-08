@@ -1,27 +1,28 @@
 
 .navBar{
-    background-color: #000000;
+    background-color: #fff;
     margin: 0;
-    border-bottom: solid .01px #ffffff;
+    border-bottom: solid .01px #000;
 }
 .mobileContainerNav .title{
-    font-size: 2em;
+    font-size: 1.6em;
 }
 .navLinks{
     display: flex;
     gap: 20px;
-    color: #ffffff;
+    color: #222;
 }
 
 .isActive {
     color: rgb(0, 106, 255);
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 .desactive{
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1.4em;
+    color: #222;
+    font-size: 1.2em;
 }.navLinks a:hover{
     scale: 1.1;
     transition: .3s;

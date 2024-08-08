@@ -16,7 +16,7 @@ export const Hero3 = () => {
         transition={{ duration: 4, delay: 1, type: "spring", stiffness: 160, damping: 20 }}
       >
         <img
-          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/img2.jpg?alt=media&token=a1bfe023-ad75-4c1a-8106-12109638821a'
+          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/006de939-fc58-4ef9-bcf4-e13162970dcf.jpg?alt=media&token=253dd571-d700-4237-bbd7-c217ca8f1542'
           alt='Combos'
           className='combosImg'
         />
@@ -46,7 +46,7 @@ export const Hero3 = () => {
         <div className="hero3Mobile">
         <h2 >¡Visítanos en nuestro local!</h2>
         <img
-          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/img2.jpg?alt=media&token=a1bfe023-ad75-4c1a-8106-12109638821a'
+          src='https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/006de939-fc58-4ef9-bcf4-e13162970dcf.jpg?alt=media&token=253dd571-d700-4237-bbd7-c217ca8f1542'
           alt='Combos'
           className='combosImg'
         />

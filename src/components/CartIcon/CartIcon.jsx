@@ -15,7 +15,7 @@ export const CartIcon = (prop) => {
         <Link  to='/carrito' className='link'>
             <button to="" className={`carrito ${prop.className}`}>
                 <p className='carritoCounter'>{totalQuantity}</p>
-                <ShoppingCartOutlinedIcon fontSize='large' style={{ color: 'white' }}/>   
+                <ShoppingCartOutlinedIcon fontSize='large' />   
             </button>
         </Link>
         </> 

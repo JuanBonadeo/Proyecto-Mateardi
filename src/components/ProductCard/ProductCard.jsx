@@ -24,7 +24,7 @@ export const ProductCard = ({ nombre, img1, precio, id, descuento = 0, stock }) 
     return (
       <div className='productCardContainer'>
         <Link to={`/producto/${id}`} className='img'>
-          <div className='discountBadge'> -{descuento}%</div>
+          <div className='discountBadge'> {descuento}% OFF</div>
           <img src={img1} alt={`${nombre}`} loading='lazy' className='imgProduct' />
         </Link>
         <div className="cardInfo">

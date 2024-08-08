@@ -7,7 +7,7 @@
     align-items: center;
     margin: 3em auto;
     width: 90%;
-    color: #fff;
+    color: #222;
 }
 .ProductList{
     display: flex;
@@ -23,7 +23,7 @@
     margin: 0 auto;
     margin-top: 3em;
     align-items: center;
-    color: #fff;
+    color: #222;
 }.h1Order h1{
     font-weight: 600;
     display: flex;
@@ -36,7 +36,7 @@
     height: 50vh;
     margin: 0 auto;
     font-size: 3em;
-    color: #fff;
+    color: #222;
 }
 .h1Order *{
     margin-top: 1em;

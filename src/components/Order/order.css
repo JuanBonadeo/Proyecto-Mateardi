@@ -5,7 +5,7 @@
     justify-content:right;
     font-size: .8em;
     height: min-content;
-    color: #ffffff
+    color: #222
   }
   .SelectOrderContainer select{
     height: min-content;

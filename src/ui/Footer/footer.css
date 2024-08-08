@@ -19,9 +19,9 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 4em;
-    color: #fffdfd;
+    color: #222;
 }.footer1 div a{
-    color: #ffffff;
+    color: #222;
     text-decoration: none;
     cursor: pointer;
     user-select: none;
@@ -48,7 +48,7 @@ footer h5{
 .footer2 svg{
     width: 30px;
     height: 30px;
-    color: #ffffff;
+    color: #222;
     cursor: pointer;
 }.footer2 svg:hover{
     scale: 1.1;
@@ -57,7 +57,7 @@ footer h5{
 }
 .light{
     height: 100px;
-    fill: white;
+    fill: #222;
 
 }
 

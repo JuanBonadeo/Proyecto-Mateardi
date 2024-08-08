@@ -4,7 +4,7 @@
     white-space: nowrap;
     background-color: rgb(0, 106, 255); 
     border: none;
-    font-size: 1em;
+    font-size: .8em;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -24,3 +24,12 @@
         }
 
    }
+
+@media screen and (max-width: 568px) {
+    .addtoCart{
+        font-size: .7em;
+        height: auto;
+        width: 140px;
+        }
+    }
+    
