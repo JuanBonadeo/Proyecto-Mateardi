@@ -5,7 +5,6 @@
   .select select {
     background-color: transparent; 
     border: 1px solid #222; 
-    color: #ffffff; 
     padding: 0.25rem; 
     cursor: pointer;
     border-radius: 5px;
@@ -13,4 +12,20 @@
   
 
  
-  
+  .select option {
+    background-color: #f9eed6; 
+    border: 1px solid #212121; 
+    color: #212121;  
+    cursor: pointer;
+    border-radius: 0;
+  }  .select option:hover{
+    background-color: #f9eed6; 
+    cursor: pointer;
+  }
+  .select{
+    background-color: #fcf6e9;
+    color: #212121;
+    box-shadow: none;
+    border-radius: .5em;
+    padding: .5em;
+  }
