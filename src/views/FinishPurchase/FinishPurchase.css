@@ -1,5 +1,5 @@
 .containerP{
-    color: #ffffffff;
+    color: #222;
     padding-top: 2em;
 }
 h1{
@@ -20,6 +20,7 @@ form{
     align-items: self-start;
     justify-content: center;
     gap: .6em;
+    color: #222;
 
 }
 .form-group{

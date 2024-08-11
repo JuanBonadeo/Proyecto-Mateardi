@@ -16,6 +16,7 @@ export const AppRouter = () => {
             <Route path="/terminarcompra" element={<FinishPurchase />} />
             <Route path="/admin123" element={<Admin />} />
             <Route path='/gracias' element={<GraciasXtuCompra />} />
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
     )

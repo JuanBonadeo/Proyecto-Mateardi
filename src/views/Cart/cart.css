@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: #ffffff;
+    color: #222;
     gap: 1em;
 }
 .cartContainer h1 {
@@ -32,7 +32,7 @@
     border: 1.6px solid #222;
     width: 90%;
     margin: 0 auto;
-    color: #ffffff;
+    color: #222;
     gap: 2em;
     border-radius: .65em;
 
@@ -50,7 +50,7 @@
     gap: 1em;
 
 }.imgName h4{
-    color: #ffffff;
+    color: #222;
 }
 
 .controls{
@@ -60,7 +60,7 @@
     align-items: center;
     margin-right: 2em;
     gap: 2em;
-    color: #ffffff;
+    color: #222;
 }
 .quantityControl{
     display: flex;
@@ -72,11 +72,11 @@
     border: solid 1px #222;
     border-radius: .66em;
     user-select: none;
-    color: #ffffff;
+    color: #222;
 }
 .quantityControl button{
     background-color: rgba(10, 10, 10, 0);
-    color: #ffffff;
+    color: #222;
     border: none;
     cursor: pointer;
 }.quantityControl button:hover{
@@ -86,7 +86,7 @@
 }
 .price{
     margin-top: 1em;
-    color: #ffffff;
+    color: #222;
 }
 .delete{
     cursor: pointer;

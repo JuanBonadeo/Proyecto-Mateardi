@@ -33,7 +33,7 @@
 }
 .namePrice h4{
     margin: 0 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     
 }
 .namePrice{
@@ -57,21 +57,24 @@
     background-color: #222;
     color: #222;
     padding: .3em;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700;
     z-index: 22;
 }
 .outOfStock{
+    background-color: #222;
     filter: opacity(.4);
+    transition: all .4s ease-in-out;
+
 }.outOfStock:hover{
-    filter: opacity(.5);
+    filter: opacity(.7);
 }
 .outOfStockBadge{
     position: absolute;
-    margin-top: 5.5em;
-    color: #575757;
-    padding: .3em;
-    font-size: 1.5em;
+    margin-top: 5em;
+    color: #222;
+    font-size: 2em;
+    font-weight: 700;
     cursor: pointer;
 }
 

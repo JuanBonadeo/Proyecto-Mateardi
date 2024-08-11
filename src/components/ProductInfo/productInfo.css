@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: left;
     gap: 2em;
-    color: #ffffff;
+    color: #222;
     margin-top: 2em;
     border-bottom: 1px solid #222
     ;
@@ -23,7 +23,7 @@
     
 }
 .productInfoContainer .information{
-    color: #ffffff;
+    color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
