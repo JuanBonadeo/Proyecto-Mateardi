@@ -20,6 +20,8 @@
     object-fit: cover;
     object-position: center;
     max-height: 90vh;
+    background-color: #aeaeae70; /* Color que deseas aplicar */
+    background-blend-mode: multiply;
     
 }
 .productInfoContainer .information{

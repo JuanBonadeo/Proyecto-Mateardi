@@ -14,7 +14,9 @@
     object-position: center;
     min-height: 300px;
     cursor: pointer;
-    filter: brightness(.93)
+    filter: brightness(.93);
+     background-color: #dadada70; /* Color que deseas aplicar */
+    background-blend-mode: multiply;
 }
 
 .img{
