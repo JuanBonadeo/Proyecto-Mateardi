@@ -28,7 +28,7 @@ export const CodigoDescuento = () => {
         } else if (code == 'admin123') {
             
             const redirectAdmin = () => {
-                window.location.href = "/admin123";
+                window.location.href = "/cargarProductos";
             };
             redirectAdmin();
         } else {
