@@ -13,17 +13,17 @@
 
  
   .select option {
-    background-color: #f9eed6; 
+    background-color: #e4e4e4; 
     border: 1px solid #212121; 
     color: #212121;  
     cursor: pointer;
     border-radius: 0;
   }  .select option:hover{
-    background-color: #f9eed6; 
+    background-color: #a9a9a9; 
     cursor: pointer;
   }
   .select{
-    background-color: #fcf6e9;
+    background-color: #e4e4e4;
     color: #212121;
     box-shadow: none;
     border-radius: .5em;
