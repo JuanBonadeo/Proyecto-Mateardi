@@ -1,5 +1,5 @@
 import './App.css'
-import {BrowserRouter, Route, Routes } from 'react-router-dom'
+import {HashRouter as BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import { AppRouter } from './router/AppRouter'
 import {NavBar, WspButton, Footer} from './ui/'

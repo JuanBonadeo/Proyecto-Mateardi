@@ -4,9 +4,7 @@ import { CartContext, Toast } from '../../context/CartContext'
 import { Button } from '../../ui/';
 import './CodigoDescuento.css';
 import { motion } from 'framer-motion';
-import { useHistory } from 'react-router-dom';
 
-const history = useHistory();
 export const CodigoDescuento = () => {
     const [code, setCode] = useState('');
 
@@ -27,12 +25,7 @@ export const CodigoDescuento = () => {
                 title: 'Código Correcto ¡10% de Descuento!'
             });
             setDescuentoCodigo(0.1);
-        } else if (code == 'admin123') {
-            
-            
-
-            history.push('/cargarProductos');
-        } else {
+        }else {
             Toast.fire({
                 icon: 'error',
                 title: 'Código Incorrecto'
