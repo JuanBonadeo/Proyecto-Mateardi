@@ -4,7 +4,9 @@ import { CartContext, Toast } from '../../context/CartContext'
 import { Button } from '../../ui/';
 import './CodigoDescuento.css';
 import { motion } from 'framer-motion';
+import { useHistory } from 'react-router-dom';
 
+const history = useHistory();
 export const CodigoDescuento = () => {
     const [code, setCode] = useState('');
 
@@ -27,10 +29,9 @@ export const CodigoDescuento = () => {
             setDescuentoCodigo(0.1);
         } else if (code == 'admin123') {
             
-            const redirectAdmin = () => {
-                window.location.href = "/cargarProductos";
-            };
-            redirectAdmin();
+            
+
+            history.push('/cargarProductos');
         } else {
             Toast.fire({
                 icon: 'error',
