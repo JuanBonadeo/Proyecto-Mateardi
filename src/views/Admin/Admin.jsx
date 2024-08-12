@@ -77,45 +77,41 @@ export const Admin = () => {
     const addProduct = async (e) => {
         e.preventDefault();
         const productFolderRef = ref(storage, `products/${category}/${nombre}`);
-
+    
         let imageUrl1 = '';
         if (image1) {
             const image1Ref = ref(productFolderRef, image1.name);
             await uploadBytesResumable(image1Ref, image1);
             imageUrl1 = await getDownloadURL(image1Ref);
         }
+        
         let imageUrl2 = '';
         if (image2) {
             const image2Ref = ref(productFolderRef, image2.name);
             await uploadBytesResumable(image2Ref, image2);
             imageUrl2 = await getDownloadURL(image2Ref);
         }
+        
         let imageUrl3 = '';
         if (image3) {
             const image3Ref = ref(productFolderRef, image3.name);
             await uploadBytesResumable(image3Ref, image3);
-            const imageUrl3 = await getDownloadURL(image3Ref);
+            imageUrl3 = await getDownloadURL(image3Ref);
         }
+        
         let imageUrl4 = '';
-        if (image3) {
+        if (image4) {
             const image4Ref = ref(productFolderRef, image4.name);
             await uploadBytesResumable(image4Ref, image4);
-            const imageUrl4 = await getDownloadURL(image4Ref);
+            imageUrl4 = await getDownloadURL(image4Ref);
         }
-
-
-
-
-
+    
         const precio = parseInt(document.getElementById('precio').value);
         const descuento = parseInt(document.getElementById('descuento').value);
         const stock = document.getElementById('stock').checked;
         const descripcion = document.getElementById('descripcion').value;
-        const img1 = document.getElementById('img1').value;
-        const img2 = document.getElementById('img2').value;
-        const img3 = document.getElementById('img3').value;
-        const img4 = document.getElementById('img4').value;
         const nombreProducto = nombre.toUpperCase().replace(/\s+/g, '-');
+        
         const nuevoProducto = {
             nombre: nombre,
             precio: precio,
@@ -127,19 +123,17 @@ export const Admin = () => {
             img2: imageUrl2,
             img3: imageUrl3,
             img4: imageUrl4,
-            
         }
-         // Replace 'your-desired-id' with the desired ID for the document
+    
         const productRef = doc(db, 'products', nombreProducto);
         setDoc(productRef, nuevoProducto)
-        
             .then(() => {
                 Swal.fire({
                     icon: 'success',
                     title: 'Producto agregado',
                     showConfirmButton: false,
                     timer: 1500
-                })
+                });
             })
             .catch((error) => {
                 Swal.fire({
@@ -147,9 +141,8 @@ export const Admin = () => {
                     title: 'Error al agregar producto',
                     showConfirmButton: false,
                     timer: 1500
-                })
-            })
-        
+                });
+            });
     }
     return (
         <div className="adminContainer">
