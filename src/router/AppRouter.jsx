@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import {HomeView, ProductInfoView, Cart, CodigoDescuento, Admin, GraciasXtuCompra, FinishPurchase} from '../views/';
+import {HomeView, ProductInfoView, Cart, CodigoDescuento, Admin, GraciasXtuCompra, FinishPurchase, QuienesSomos, TerminosYCondiciones} from '../views/';
 import { ProductsContainer } from '../components';
 
 export const AppRouter = () => {
@@ -16,6 +16,8 @@ export const AppRouter = () => {
             <Route path="/terminarcompra" element={<FinishPurchase />} />
             <Route path="/admin123" element={<Admin />} />
             <Route path='/gracias' element={<GraciasXtuCompra />} />
+            <Route path='/quienesSomos' element={<QuienesSomos />} />
+            <Route path='/terminosycondiciones' element={<TerminosYCondiciones />} />
             <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 

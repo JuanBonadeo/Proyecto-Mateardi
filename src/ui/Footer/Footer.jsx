@@ -13,9 +13,9 @@ export const Footer = () => {
             <div className='footer1'>
                 
                 <div className='footerLinks'>
-                    <Link to="/contacto"className="dark" label="Atencion al Cliente">Atencion al Cliente</Link>
-                    <Link  className="dark"label="Preguntas Frecuentes">Preguntas Frecuentes</Link>
-                    <Link className="dark" label="Terminos & Condiciones">Terminos & Condiciones</Link>
+                    <Link to="https://wa.me/5491165165979"className="dark" label="Atencion al Cliente">Atencion al Cliente</Link>
+                    <Link  to="/clientes" className="dark"label="Preguntas Frecuentes">Compras de clientes</Link>
+                    <Link to="terminosycondiciones" className="dark" label="Terminos & Condiciones">Terminos & Condiciones</Link>
                     <Link to="/quienesSomos" className="dark" label="Quienes Somos">Quienes Somos</Link>
                 </div>
                 <Logo className='logo light' />

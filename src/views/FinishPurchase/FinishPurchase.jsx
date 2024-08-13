@@ -29,6 +29,15 @@ export const FinishPurchase = () => {
             setTotalFinal(total);
         }
     };
+
+    const handlePagoChange = (event) => {
+        const selectedOption = event.target.value;
+        if (selectedOption === 'credito') {
+            setTotalFinal(total  * 1.2);
+        } else{
+            setTotalFinal(total);
+        }
+    };
    
     
 
@@ -38,7 +47,6 @@ export const FinishPurchase = () => {
         const domicilio = document.getElementById('address').value;
         e.preventDefault();
         let precioEnvio = 4500
-        if(pago ==='tranferencia') 
         Swal.fire({
             title: 'Confirmar compra',
             text: '¿Estás seguro de que deseas realizar la compra? Seras redirigido a WhatsApp para completar la compra.',
@@ -53,14 +61,13 @@ export const FinishPurchase = () => {
                 mensajePedido += 'Metodo de Entrega: ' + entrega + '\n';
                 if (entrega === 'envio') {
                     mensajePedido += 'Domicilio: ' + domicilio + '\n';
-                    mensajePedido += 'Costo de envio: ' + formatearMoneda(4000) + ' (envio gratis a partir de 30000)\n';
-                    totalFinal = total + 4000;
+                    mensajePedido += 'Costo de envio: ' + formatearMoneda(precioEnvio) + '\n';
                 }
                 mensajePedido += 'pedido:\n';
                 cart.forEach((prod) => {
                     mensajePedido += `*${prod.nombre}*  Cantidad: *${prod.quantity}* Precio: *${calcularDescuento(prod.precio * prod.quantity, prod.descuento)}*\n`;
                 });
-                 mensajePedido += `\nTotal: *${formatearMoneda(total)}*`;
+                 mensajePedido += `\nTotal: *${formatearMoneda(totalFinal) }*`;
 
                 // Completar con el número de WhatsApp
                 const numeroWhatsApp = '5491165165979';
@@ -84,7 +91,7 @@ export const FinishPurchase = () => {
                 window.open(urlWhatsApp, '_blank');
                 clearCart2();
                 const redirectHome = () => {
-                    window.location.href = "/gracias";
+                    window.location.href = "/#/gracias";
                 };
                 redirectHome();
             }
@@ -107,10 +114,10 @@ export const FinishPurchase = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor='payment'>Método de Pago:</label>
-                        <select name="payment" id="payment" className='select' required>
+                        <select name="payment" id="payment" className='select' required onChange={handlePagoChange}>
                             <option value="transferencia">Transf. Bancaria</option>
                             <option value="efectivo">Efectivo</option>
-                            <option value="dredito">Tarjeta Credito</option>
+                            <option value="credito">Tarjeta Credito</option>
                             <option value="debito">Tarjeta Debito</option>
                         </select>
                     </div>
@@ -127,7 +134,9 @@ export const FinishPurchase = () => {
                     </div>
                 </div>
                 {descuentoCodigo > 0 && <h4>Descuento por codigo del {descuentoCodigo * 100}%</h4>}
-                <h4>Total: &nbsp;{formatearMoneda(total)}</h4>
+                <h4>Total: &nbsp;{formatearMoneda(totalFinal)}</h4>
+                
+                    <p>Hay 20% de recargo pago con tarjeta de credito.</p>
                 <button className="Button" type='submit'>Comprar</button>
             </form>
             
