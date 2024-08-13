@@ -4,7 +4,6 @@ import { Grid, Paper, Typography } from '@mui/material';
 const fotos = [
     "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2F24231f8c-4f22-4297-a5cd-2db52e03322a.jpg?alt=media&token=1ed2e017-ab0d-4765-a1df-aa9521361ea4",
     "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2F4e93bee0-9eb4-432e-9822-a3d95304ca1d.jpg?alt=media&token=90b5d853-870a-47d8-8b7f-cf622bd2a78c",
-    "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2F4e93bee0-9eb4-432e-9822-a3d95304ca1d.jpg?alt=media&token=90b5d853-870a-47d8-8b7f-cf622bd2a78c",
     "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2Fa5192aee-e699-4ca0-96af-b4f7c37122e3.jpg?alt=media&token=aba4fd8d-eea8-4056-95f1-7e22174e2ea3",
     "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2Fabede59a-a7fb-4e8a-b986-ab4625ab274b.jpg?alt=media&token=20b4cecd-0641-4754-8f14-272abee6e441",
     "https://firebasestorage.googleapis.com/v0/b/mateardi-d8f70.appspot.com/o/clientes%2Fc0947015-10e5-430d-9df3-7362e9d05c5d.jpg?alt=media&token=a390ceb0-d00e-4b1c-a533-b3556c6cfe64",
