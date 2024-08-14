@@ -24,7 +24,7 @@ export const Hero3 = () => {
           <h2>¡Visítanos en nuestro local!</h2>
           <p>
             📍 Bacacay 2938, Paseo Imperial, Flores, Cap Fed. <br />
-            Abierto de Lunes a Sábado, de 10:00 a 19:00 hs.
+            Abierto de martes a viernes 10 am 16hs, sábados de 10 am a 15hs.
 
             <hr />
           </p>
@@ -53,7 +53,7 @@ export const Hero3 = () => {
         <hr /> 
           <p>
             📍 Bacacay 2938, Paseo Imperial, Flores, Cap Fed. <br />
-            Abierto de Lunes a Sábado, de 10:00 a 19:00 hs.
+            Abierto de martes a viernes 10 am 16hs, sábados de 10 am a 15hs.
           </p>
         </div>
       </motion.div>
